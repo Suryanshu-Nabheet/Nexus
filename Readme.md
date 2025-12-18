@@ -73,7 +73,7 @@ IDE/
 1. Clone the repository:
 
 ```bash
-https://github.com/Suryanshu-Nabheet/Code_Craft_IDE.git
+https://github.com/Suryanshu-Nabheet/Nexus.git
 ```
 
 2. Install dependencies:
