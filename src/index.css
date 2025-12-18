@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased overflow-hidden selection:bg-blue-500/30 selection:text-blue-200 bg-black text-[#cccccc];
+    font-size: 13px;
+    line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  /* VS Code-like Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #424242; 
+    border-radius: 0px; 
+    border: 2px solid transparent; 
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f;
+    border: 2px solid transparent; 
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  .enterprise-sidebar {
+    @apply bg-[#252526] border-r border-[#1f1f1f]; /* Standard Side Bar Color */
+  }
+  
+  .enterprise-activitybar {
+    @apply bg-[#333333] w-12 flex flex-col items-center py-2 justify-between z-20;
+  }
+}
